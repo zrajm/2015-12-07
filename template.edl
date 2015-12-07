@@ -6,7 +6,7 @@
     <system_instance>10</system_instance>
     <product xmlns="http://www.ardendo.com/apf/">
       <company>Vizrt</company>
-      <name>CONFORM#1947</name>
+      <name>CONFORM#2038</name>
       <version>
         <major>5</major>
         <minor>0</minor>
@@ -18,25 +18,17 @@
     <username/>
     <session_key/>
   </credentials>
-  <apf current_mob_id="144888270015724" xsi:schemaLocation="http://www.ardendo.com/apf/ apf.xsd" xmlns="http://www.ardendo.com/apf/">
+  <apf current_mob_id="144950117215724" xsi:schemaLocation="http://www.ardendo.com/apf/ apf.xsd" xmlns="http://www.ardendo.com/apf/">
     <version>
       <major>1</major>
       <minor>0</minor>
       <build>10</build>
     </version>
     <dictionary>
-      <codec_definition id="http://www.ardendo.com/apf/codec/dv/dv">
+      <codec_definition id="http://www.ardendo.com/apf/codec/h264/h264">
         <name/>
         <description/>
       </codec_definition>
-      <codec_definition id="http://www.ardendo.com/apf/codec/pcm">
-        <name/>
-        <description/>
-      </codec_definition>
-      <track_definition id="http://www.ardendo.com/apf/track/mono">
-        <name/>
-        <description/>
-      </track_definition>
       <track_definition id="http://www.ardendo.com/apf/track/video">
         <name/>
         <description/>
@@ -45,10 +37,6 @@
         <name/>
         <description/>
       </container_definition>
-      <data_definition id="http://www.ardendo.com/apf/data/sound">
-        <name/>
-        <description/>
-      </data_definition>
       <data_definition id="http://www.ardendo.com/apf/data/timecode">
         <name/>
         <description/>
@@ -59,8 +47,8 @@
       </data_definition>
     </dictionary>
     <locations>
-      <location id="ardome-default-7">
-        <handle>onedev162-hr-1</handle>
+      <location id="ardome-default-22">
+        <handle>onedev162-lr-1</handle>
         <site_id>default</site_id>
         <accessors>
           <http_accessor>
@@ -82,14 +70,14 @@
             <build>0</build>
           </version>
         </product>
-        <timestamp>1448882699</timestamp>
-        <time>2015-11-30T11:24:59Z</time>
+        <timestamp>1449501171</timestamp>
+        <time>2015-12-07T15:12:51Z</time>
         <by>SYSTEM+admin</by>
       </revision>
     </revision_history>
     <content>
-      <master_media_object id="2101511300000360106">
-        <name>DV_PAL_3mb.mxf_19107_1448867663.81</name>
+      <master_media_object id="2101512070000372606">
+        <name>test_creates_item_with_media_item_1449499082.99</name>
         <creator>ardome</creator>
         <tracks>
           <track id="1">
@@ -98,9 +86,9 @@
             <data_def>http://www.ardendo.com/apf/data/picture</data_def>
             <track_items>
               <source_clip_track_item active="on">
-                <length>25</length>
+                <length>500</length>
                 <source_ref>
-                  <mob_id>2101511300001392307</mob_id>
+                  <mob_id>2101512070001446807</mob_id>
                   <track_id>1</track_id>
                   <start_time>0</start_time>
                 </source_ref>
@@ -108,43 +96,13 @@
             </track_items>
           </track>
           <track id="2">
-            <name>A1</name>
-            <track_no>1</track_no>
-            <data_def>http://www.ardendo.com/apf/data/sound</data_def>
-            <track_items>
-              <source_clip_track_item active="on">
-                <length>25</length>
-                <source_ref>
-                  <mob_id>2101511300001392307</mob_id>
-                  <track_id>2</track_id>
-                  <start_time>0</start_time>
-                </source_ref>
-              </source_clip_track_item>
-            </track_items>
-          </track>
-          <track id="3">
-            <name>A2</name>
-            <track_no>2</track_no>
-            <data_def>http://www.ardendo.com/apf/data/sound</data_def>
-            <track_items>
-              <source_clip_track_item active="on">
-                <length>25</length>
-                <source_ref>
-                  <mob_id>2101511300001392307</mob_id>
-                  <track_id>3</track_id>
-                  <start_time>0</start_time>
-                </source_ref>
-              </source_clip_track_item>
-            </track_items>
-          </track>
-          <track id="4">
             <name>TC1</name>
             <track_no>1</track_no>
             <data_def>http://www.ardendo.com/apf/data/timecode</data_def>
             <track_items>
               <timecode_track_item active="on">
-                <length>25</length>
-                <start>90000</start>
+                <length>500</length>
+                <start>0</start>
                 <fps>
                   <numerator>25</numerator>
                   <denominator>1</denominator>
@@ -155,8 +113,8 @@
           </track>
         </tracks>
         <track_configurations>
-          <track_configuration media_type="picture" rank="5">
-            <name>DPFOIMFHXREJGGCZ.mxf Video - Highres/Proxy (dv/dv)</name>
+          <track_configuration media_type="picture" rank="1">
+            <name>XATLZOFSAFQBWRGW.mp4 Video - Highres/Proxy (h264/h264)</name>
             <conf_tracks>
               <conf_track>
                 <name>V1</name>
@@ -165,25 +123,10 @@
               </conf_track>
             </conf_tracks>
           </track_configuration>
-          <track_configuration media_type="sound" rank="20">
-            <name>DPFOIMFHXREJGGCZ.mxf Audio - Highres/Proxy (dv/dv)</name>
-            <conf_tracks>
-              <conf_track>
-                <name>A1</name>
-                <track_def>http://www.ardendo.com/apf/track/mono</track_def>
-                <track_id>2</track_id>
-              </conf_track>
-              <conf_track>
-                <name>A2</name>
-                <track_def>http://www.ardendo.com/apf/track/mono</track_def>
-                <track_id>3</track_id>
-              </conf_track>
-            </conf_tracks>
-          </track_configuration>
         </track_configurations>
       </master_media_object>
-      <source_media_object id="2101511300001392307">
-        <name>DPFOIMFHXREJGGCZ.mxf</name>
+      <source_media_object id="2101512070001446807">
+        <name>XATLZOFSAFQBWRGW.mp4</name>
         <creator>ardome</creator>
         <tracks>
           <track id="1">
@@ -192,37 +135,7 @@
             <data_def>http://www.ardendo.com/apf/data/picture</data_def>
             <track_items>
               <source_clip_track_item active="on">
-                <length>25</length>
-                <source_ref>
-                  <mob_id>0</mob_id>
-                  <track_id>0</track_id>
-                  <start_time>0</start_time>
-                </source_ref>
-              </source_clip_track_item>
-            </track_items>
-          </track>
-          <track id="2">
-            <name>A1</name>
-            <track_no>1</track_no>
-            <data_def>http://www.ardendo.com/apf/data/sound</data_def>
-            <track_items>
-              <source_clip_track_item active="on">
-                <length>25</length>
-                <source_ref>
-                  <mob_id>0</mob_id>
-                  <track_id>0</track_id>
-                  <start_time>0</start_time>
-                </source_ref>
-              </source_clip_track_item>
-            </track_items>
-          </track>
-          <track id="3">
-            <name>A2</name>
-            <track_no>2</track_no>
-            <data_def>http://www.ardendo.com/apf/data/sound</data_def>
-            <track_items>
-              <source_clip_track_item active="on">
-                <length>25</length>
+                <length>500</length>
                 <source_ref>
                   <mob_id>0</mob_id>
                   <track_id>0</track_id>
@@ -238,60 +151,46 @@
               <numerator>25</numerator>
               <denominator>1</denominator>
             </sample_rate>
-            <codec_def>http://www.ardendo.com/apf/codec/dv/dv</codec_def>
+            <codec_def>http://www.ardendo.com/apf/codec/h264/h264</codec_def>
             <edit_rate>
               <numerator>25</numerator>
               <denominator>1</denominator>
             </edit_rate>
             <sample_size>8</sample_size>
-            <height>576</height>
-            <width>720</width>
+            <height>1080</height>
+            <width>1920</width>
             <interlace>1</interlace>
             <aspect_ratio>
-              <numerator>4</numerator>
-              <denominator>3</denominator>
+              <numerator>16</numerator>
+              <denominator>9</denominator>
             </aspect_ratio>
             <sample_aspect_ratio>
-              <numerator>59</numerator>
-              <denominator>54</denominator>
+              <numerator>1</numerator>
+              <denominator>1</denominator>
             </sample_aspect_ratio>
             <chroma>4:2:0</chroma>
-            <gopsize>1</gopsize>
-            <rpp>1</rpp>
-            <bitrate>25000000</bitrate>
+            <gopsize>0</gopsize>
+            <codec_profile>high</codec_profile>
+            <bitrate>12703000</bitrate>
           </picture_descriptor>
-          <sound_descriptor>
-            <sample_rate>
-              <numerator>48000</numerator>
-              <denominator>1</denominator>
-            </sample_rate>
-            <codec_def>http://www.ardendo.com/apf/codec/pcm</codec_def>
-            <edit_rate>
-              <numerator>25</numerator>
-              <denominator>1</denominator>
-            </edit_rate>
-            <sample_size>16</sample_size>
-            <bitrate>768000</bitrate>
-          </sound_descriptor>
           <container_descriptor>
             <container_def>http://www.ardendo.com/apf/container/mov</container_def>
-            <header_size>7168</header_size>
-            <block_size>153088</block_size>
+            <header_size>6883</header_size>
           </container_descriptor>
           <physical_descriptor>
             <locators>
               <ardome_locator>
                 <site_id>default</site_id>
                 <system_instance>10</system_instance>
-                <itm_id>2101511300002397121</itm_id>
+                <itm_id>2101512070002412021</itm_id>
                 <sit_id>0</sit_id>
                 <mog_id>0</mog_id>
-                <mob_id>2101511300001392307</mob_id>
+                <mob_id>2101512070001446807</mob_id>
               </ardome_locator>
               <service_locator>
-                <filename>6o0JI4lCBklfpjAXBIWGVw/1448969111/hr1/2015/11/30/2101511300002397121/mxf-op1a-dv-pcm/DPFOIMFHXREJGGCZ.mxf</filename>
-                <location_id>ardome-default-7</location_id>
-                <size>3834880</size>
+                <filename>RQR2RroKBTHFvsuBesJkdQ/1449587580/lr1/2015/12/07/2101512070002412021/qt-cont-h264-high/XATLZOFSAFQBWRGW.mp4</filename>
+                <location_id>ardome-default-22</location_id>
+                <size>31765645</size>
                 <state>active</state>
               </service_locator>
               <local_locator>
@@ -303,8 +202,8 @@
         </descriptors>
         <media_quality>highres</media_quality>
       </source_media_object>
-      <timeline_media_object id="144888270015724">
-        <name>whole_clip</name>
+      <timeline_media_object id="144950117215724">
+        <name>conformed_</name>
         <creator>ardome</creator>
         <tracks>
           <track id="1">
@@ -313,9 +212,9 @@
             <data_def>http://www.ardendo.com/apf/data/picture</data_def>
             <track_items>
               <source_clip_track_item active="on">
-                <length>25</length>
+                <length>1</length>
                 <source_ref>
-                  <mob_id>2101511300000360106</mob_id>
+                  <mob_id>2101512070000372606</mob_id>
                   <track_id>1</track_id>
                   <start_time>0</start_time>
                 </source_ref>
@@ -324,44 +223,12 @@
             </track_items>
           </track>
           <track id="2">
-            <name>A1</name>
-            <track_no>1</track_no>
-            <data_def>http://www.ardendo.com/apf/data/sound</data_def>
-            <track_items>
-              <source_clip_track_item active="on">
-                <length>25</length>
-                <source_ref>
-                  <mob_id>2101511300000360106</mob_id>
-                  <track_id>2</track_id>
-                  <start_time>0</start_time>
-                </source_ref>
-                <link>1</link>
-              </source_clip_track_item>
-            </track_items>
-          </track>
-          <track id="3">
-            <name>A2</name>
-            <track_no>2</track_no>
-            <data_def>http://www.ardendo.com/apf/data/sound</data_def>
-            <track_items>
-              <source_clip_track_item active="on">
-                <length>25</length>
-                <source_ref>
-                  <mob_id>2101511300000360106</mob_id>
-                  <track_id>3</track_id>
-                  <start_time>0</start_time>
-                </source_ref>
-                <link>1</link>
-              </source_clip_track_item>
-            </track_items>
-          </track>
-          <track id="4">
             <name>TC1</name>
             <track_no>1</track_no>
             <data_def>http://www.ardendo.com/apf/data/timecode</data_def>
             <track_items>
               <timecode_track_item active="on">
-                <length>25</length>
+                <length>1</length>
                 <start>0</start>
                 <fps>
                   <numerator>25</numerator>
@@ -377,80 +244,43 @@
   </apf>
   <conform_targets local_handle="onedev162.se.vizrt.internal">
     <target xmlns="http://www.ardendo.com/conform/">
-      <timeline_media_object>144888270015724</timeline_media_object>
+      <timeline_media_object>144950117215724</timeline_media_object>
       <track_list>
         <track>
           <data_def>http://www.ardendo.com/apf/data/picture</data_def>
           <channel_no>1</channel_no>
         </track>
-        <track>
-          <data_def>http://www.ardendo.com/apf/data/sound</data_def>
-          <channel_no>1</channel_no>
-        </track>
-        <track>
-          <data_def>http://www.ardendo.com/apf/data/sound</data_def>
-          <channel_no>2</channel_no>
-        </track>
       </track_list>
       <descriptors>
-        <sound_descriptor xmlns="http://www.ardendo.com/apf/">
-          <sample_rate>
-            <numerator>48000</numerator>
-            <denominator>1</denominator>
-          </sample_rate>
-          <codec_def>http://www.ardendo.com/apf/codec/pcm</codec_def>
-          <edit_rate>
-            <numerator>25</numerator>
-            <denominator>1</denominator>
-          </edit_rate>
-          <sample_size>16</sample_size>
-          <bitrate>768000</bitrate>
-          <mix_matrix>
-            <name>Transmission</name>
-            <default>false</default>
-            <mix_descriptor>
-              <mix_line>
-                <source_track_id>1</source_track_id>
-                <target_channel_id>1</target_channel_id>
-                <level_change>1</level_change>
-              </mix_line>
-              <mix_line>
-                <source_track_id>2</source_track_id>
-                <target_channel_id>2</target_channel_id>
-                <level_change>1</level_change>
-              </mix_line>
-            </mix_descriptor>
-          </mix_matrix>
-        </sound_descriptor>
         <picture_descriptor xmlns="http://www.ardendo.com/apf/">
           <sample_rate>
             <numerator>25</numerator>
             <denominator>1</denominator>
           </sample_rate>
-          <codec_def>http://www.ardendo.com/apf/codec/dv/dv</codec_def>
+          <codec_def>http://www.ardendo.com/apf/codec/h264/h264</codec_def>
           <edit_rate>
             <numerator>25</numerator>
             <denominator>1</denominator>
           </edit_rate>
           <sample_size>8</sample_size>
-          <height>576</height>
-          <width>720</width>
+          <height>1080</height>
+          <width>1920</width>
           <interlace>1</interlace>
           <aspect_ratio>
-            <numerator>4</numerator>
-            <denominator>3</denominator>
+            <numerator>16</numerator>
+            <denominator>9</denominator>
           </aspect_ratio>
           <sample_aspect_ratio>
-            <numerator>59</numerator>
-            <denominator>54</denominator>
+            <numerator>1</numerator>
+            <denominator>1</denominator>
           </sample_aspect_ratio>
           <chroma>4:2:0</chroma>
-          <gopsize>1</gopsize>
-          <rpp>1</rpp>
-          <bitrate>25000000</bitrate>
+          <gopsize>15</gopsize>
+          <codec_profile>high</codec_profile>
+          <bitrate>12703000</bitrate>
         </picture_descriptor>
         <container_descriptor xmlns="http://www.ardendo.com/apf/">
-          <container_def>http://www.ardendo.com/apf/container/mxf</container_def>
+          <container_def>http://www.ardendo.com/apf/container/mov</container_def>
         </container_descriptor>
         <physical_descriptor xmlns="http://www.ardendo.com/apf/">
           <locators>
@@ -459,7 +289,7 @@
               <filename>{{dest_file}}</filename>
             </local_locator>
             <service_locator>
-              <filename>QGUSSILVISAJPXHI.mxf</filename>
+              <filename>GCRLHSWAKOSFHCHY.mp4</filename>
               <location_id>ardome-default-3</location_id>
             </service_locator>
           </locators>
