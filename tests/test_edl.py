@@ -4,7 +4,7 @@ from core.conform import read_edl_file
 
 @pytest.fixture(scope='session')
 def edl_template(request):
-    xml = read_edl_file()
+    xml = read_edl_template()
     return xml
 
 def test_edl_xmlishness(edl_template):
