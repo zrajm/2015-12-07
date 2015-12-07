@@ -1,0 +1,6 @@
+*.pyc
+*~
+*.bak
+*.tmp
+__pycache__
+.\#*
