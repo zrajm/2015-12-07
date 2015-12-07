@@ -32,6 +32,6 @@ def test_file_is_mp4(done_conform):
         stdout=subprocess.PIPE,
     )
     mime_type = process.stdout.readlines()[0]
-    assert mime_type == path + ': video/mp4; charset=binary\n'
+    assert mime_type.startswith(path + ': video/mp4')
 
 
