@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
+import shutil
+
 def conform():
     path = u'/tmp/file.mxf'
-
-    with open(path, 'w') as f:
-        f.write('hello world')
-
+    shutil.copyfile(u'example.mxf', path)
     return path
+
+if __name__ == '__main__':
+    conform()
