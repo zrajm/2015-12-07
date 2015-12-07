@@ -1,6 +1,6 @@
 
 import pytest
-from core.conform import read_edl_file
+from core.conform import read_edl_template
 
 @pytest.fixture(scope='session')
 def edl_template(request):
