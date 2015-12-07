@@ -41,7 +41,7 @@
         <name/>
         <description/>
       </track_definition>
-      <container_definition id="http://www.ardendo.com/apf/container/mxf">
+      <container_definition id="http://www.ardendo.com/apf/container/mov">
         <name/>
         <description/>
       </container_definition>
@@ -274,7 +274,7 @@
             <bitrate>768000</bitrate>
           </sound_descriptor>
           <container_descriptor>
-            <container_def>http://www.ardendo.com/apf/container/mxf</container_def>
+            <container_def>http://www.ardendo.com/apf/container/mov</container_def>
             <header_size>7168</header_size>
             <block_size>153088</block_size>
           </container_descriptor>
