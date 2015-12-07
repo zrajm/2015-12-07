@@ -3,8 +3,8 @@
 import shutil
 
 def conform():
-    path = u'/tmp/file.mxf'
-    shutil.copyfile(u'example.mxf', path)
+    path = u'/tmp/file.mp4'
+    shutil.copyfile(u'example.mp4', path)
     return path
 
 if __name__ == '__main__':

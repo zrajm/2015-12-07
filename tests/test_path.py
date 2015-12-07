@@ -1,5 +1,5 @@
 
-import os, pytest
+import os, pytest, subprocess
 from program import conform
 
 
@@ -19,14 +19,19 @@ def done_conform(request):
 
 def test_path(done_conform):
     path = done_conform
-    assert path == '/tmp/file.mxf'
+    assert path == '/tmp/file.mp4'
 
 def test_file_exist(done_conform):
     path = done_conform
     assert os.path.isfile(path)
 
-def test_file_is_mxf(done_conform):
+def test_file_is_mp4(done_conform):
     path = done_conform
-    with open(path, 'rb') as f:
-        head = f.read(14)
-        assert head == '\x06\x0e\x2b\x34\x02\x05\x01\x01\x0d\x01\x02\x01\x01\x02'
+    process = subprocess.Popen(
+        ['file', '-I', path],
+        stdout=subprocess.PIPE,
+    )
+    mime_type = process.stdout.readlines()[0]
+    assert mime_type == path + ': video/mp4; charset=binary\n'
+
+
