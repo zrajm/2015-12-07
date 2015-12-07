@@ -4,7 +4,10 @@ from bottle import SimpleTemplate
 import shutil, sys
 
 def conform(path):
-    shutil.copyfile(u'example.mp4', path)
+    run_dvstory(
+        source_file = 'example2.mp4',
+        dest_file   = path,
+    )
     return path
 
 def read_edl_template():
