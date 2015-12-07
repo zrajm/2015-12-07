@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
-import shutil
+from bottle import SimpleTemplate
+import shutil, sys
+
 
 def conform(path):
     shutil.copyfile(u'example.mp4', path)
     return path
 
 if __name__ == '__main__':
-    conform()
+    conform(sys.argv[1])
