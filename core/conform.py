@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import shutil, sys, subprocess
+import shutil, sys, subprocess, os
 
 def conform(path):
     run_dvstory(
@@ -23,14 +23,15 @@ def render_edl(edl_template, source_file, dest_file):
 def run_dvstory(source_file, dest_file):
     edl = render_edl(
         read_edl_template(),
-        source_file,
+        os.path.join(os.getcwd(), source_file),
         dest_file,
     )
-    edl_file = '/tmp/something'
+    edl_file = '/tmp/something.edl'
     with open(edl_file, 'w') as f:
         f.write(edl)
     process = subprocess.Popen(['dvstory-amf', '--input', edl_file])
     return process.wait() == 0
 
 if __name__ == '__main__':
+    assert len(sys.argv) == 2, "Exactly one argument/filename required"
     conform(sys.argv[1])
