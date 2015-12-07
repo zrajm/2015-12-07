@@ -1,2 +1,9 @@
+#!/usr/bin/env python
+
 def conform():
-    return "/tmp/file.mxf"
+    path = u'/tmp/file.mxf'
+
+    with open(path, 'w') as f:
+        f.write('hello world')
+
+    return path
