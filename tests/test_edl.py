@@ -31,9 +31,9 @@ def test_dest_placeholder(edl_template):
     assert '{{dest_file}}' in xml
 
 def test_source_filename(edl):
-    xml = edl_template
+    xml = edl
     assert '<filename>example2.mp4</filename>' in xml
 
 def test_dest_filename(edl):
-    xml = edl_template
+    xml = edl
     assert '<filename>/tmp/file.mp4</filename>' in xml
