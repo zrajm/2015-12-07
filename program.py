@@ -2,8 +2,7 @@
 
 import shutil
 
-def conform():
-    path = u'/tmp/file.mp4'
+def conform(path):
     shutil.copyfile(u'example.mp4', path)
     return path
 

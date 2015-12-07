@@ -5,7 +5,7 @@ from program import conform
 
 @pytest.fixture(scope='session')
 def done_conform(request):
-    path = conform()
+    path = conform(u'/tmp/file.mp4')
 
     def delete_file():
         os.remove(path)
@@ -28,7 +28,7 @@ def test_file_exist(done_conform):
 def test_file_is_mp4(done_conform):
     path = done_conform
     process = subprocess.Popen(
-        ['file', '-I', path],
+        ['file', '--mime', path],
         stdout=subprocess.PIPE,
     )
     mime_type = process.stdout.readlines()[0]
