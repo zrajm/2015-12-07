@@ -1,6 +1,6 @@
 
 import os, pytest, subprocess
-from program import conform
+from core.conform import conform
 
 
 @pytest.fixture(scope='session')
