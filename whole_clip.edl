@@ -296,7 +296,7 @@
               </service_locator>
               <local_locator>
                 <handle>onedev162.se.vizrt.internal</handle>
-                <filename>/ardome/media/hr/hr1/2015/11/30/2101511300002397121/mxf-op1a-dv-pcm//DPFOIMFHXREJGGCZ.mxf</filename>
+                <filename>{{source_file}}</filename>
               </local_locator>
             </locators>
           </physical_descriptor>
@@ -456,7 +456,7 @@
           <locators>
             <local_locator>
               <handle>onedev162.se.vizrt.internal</handle>
-              <filename>/ardome/securehttp/cut1/QGUSSILVISAJPXHI.mxf</filename>
+              <filename>{{dest_file}}</filename>
             </local_locator>
             <service_locator>
               <filename>QGUSSILVISAJPXHI.mxf</filename>
