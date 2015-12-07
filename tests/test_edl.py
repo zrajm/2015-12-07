@@ -4,9 +4,7 @@ from core.conform import read_edl_template, render_edl
 
 @pytest.fixture(scope='session')
 def edl_template(request):
-    xml = read_edl_template()
-    return xml
-
+    return read_edl_template()
 
 @pytest.fixture(scope='session')
 def edl(request, edl_template):
