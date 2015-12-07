@@ -17,5 +17,10 @@ def render_edl(edl_template, source_file, dest_file):
         .replace('{{dest_file}}',   dest_file)
     )
 
+def run_dvstory(source_file, dest_file):
+    shutil.copyfile(source_file, dest_file)
+    return dest_file
+    
+
 if __name__ == '__main__':
     conform(sys.argv[1])

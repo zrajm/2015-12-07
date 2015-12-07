@@ -3,7 +3,7 @@ import os, pytest, subprocess
 from core.conform import conform
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='module')
 def done_conform(request):
     path = conform(u'/tmp/file.mp4')
 
