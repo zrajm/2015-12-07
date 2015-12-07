@@ -7,12 +7,17 @@ from program import conform
 def done_conform():
     return conform()
 
+################################################################################
+
 def test_path(done_conform):
     path = done_conform
     assert path == '/tmp/file.mxf'
+
+def test_file_exist(done_conform):
+    path = done_conform
     assert os.path.isfile(path)
 
-def test_fileinfo(done_conform):
+def test_file_is_mxf(done_conform):
     path = done_conform
     with open(path, 'rb') as f:
         head = f.read(14)
